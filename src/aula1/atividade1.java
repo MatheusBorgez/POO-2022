@@ -18,6 +18,7 @@ public class atividade1 {
 
         System.out.println("Entre com o segundo numero");
         num2 = sc.nextInt();
+        sc.close();
 
         mostrarIntervalo(num1, num2);
         mostrarSoma(num1, num2);
