@@ -7,7 +7,7 @@ public class Main2 {
     public static void main(String[] args) {
         ArrayList<Curso> cursos = new ArrayList<>();
 
-
+        Departamento departamento = new Departamento("Instituto de Informática", "INF", 01);
 
         for (int i = 0; i < 4; i++) {
             Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Main2 {
          
             sc.close();
                
-            cursos.add(new Curso(nome, codigo, vagas, cargaHoraria));
+            cursos.add(new Curso(nome, codigo, vagas, cargaHoraria, departamento));
         }
 
         cursos.forEach(curso -> curso.toString());
